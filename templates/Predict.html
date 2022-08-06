@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Predict</title>
+</head>
+<style>
+    .text {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+    .handle {
+        color: purple;
+    }
+</style>
+
+<body style="background-image: -webkit-linear-gradient(0deg, white 15%,#568ded 90%) !important;">
+    <!-- Navigation Bar -->
+    <section class="navigation-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fas fa-chart-line fa-2x"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ url_for('main')}}">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Predict Section -->
+    <section class="form">
+        <form action="/predict" method="post">
+            <input type="text" placeholder="Codeforces UserHandle" name="handle">
+        </form>
+    </section>
+    <div class="text">
+        <!-- User not found -->
+        {% if name=='failed' %}
+        <h1>Handle Not Found!</h1>
+        <!-- Solved 0 problems and contests -->
+        {% elif problems==0 and name!='' %}
+        <h1>Not solved any problem yet!</h1>
+        {% elif name!='' %}
+        <h1 class="handle">{{name}}</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Level : {{maxRank}}</p>
+                    <p>Max. Rating : {{maxRating}}</p>
+                    <p>Current Rating: {{currRating}}</p>
+                    <p>Total Problems Solved : {{problems}}</p>
+                    <p>Friends : {{friendsCount}}</p>
+                    <p>No.of Contests: {{contests}}</p>
+                </div>
+                <div class="col-sm-6">
+                    <p><img src={{photo}} alt="" srcset=""></p>
+                </div>
+            </div>
+        </div>
+        <h3>Your future rating may be</h3>
+        <h1 style="color: brown;">{{ans}}</h1>
+        {% endif %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

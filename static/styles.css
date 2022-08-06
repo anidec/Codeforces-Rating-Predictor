@@ -1,0 +1,140 @@
+.navigation-color{
+    background-color: #fff !important;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.521);
+
+}
+.main-section{
+    background: rgba(0, 0, 0, 0.5) url("https://wallpaperaccess.com/full/3239444.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-self: center; 
+    background-blend-mode: darken;
+}
+.container-fluid{
+    padding: 0em 20em;
+}
+.nav-item{
+    padding-left: 3em;
+    font-size:1.2em;
+    font-weight: 600;
+    padding: 0em 1.5em !important;
+}
+.nav-link{
+    color: black !important;
+    
+}
+.nav-link:hover{
+    color: blue !important;
+}
+.main-section .intro{
+    height: 40em;
+    display: block;
+    justify-items: center;
+    text-align: center;
+}
+.intro h1{
+    padding-top: 12%;
+    font-weight: 400;
+    font-size: 3.4rem;
+    color: rgb(255, 255, 255);
+}
+.button{
+    justify-content: center;
+    align-self: center !important;
+    align-items: center;
+    padding: 15px 60px;
+    font-size: 1.3em;
+    border-width: 0.15em;
+    margin-top: 30px;
+}
+
+.about-section{
+    background-image: -webkit-linear-gradient(0deg, white 10%,#6808c8 90%); 
+    padding-top: 8em;
+    height: 40em;
+    display: block;
+    justify-items: center;
+    text-align: center;
+    color: rgb(65, 43, 43);
+}
+.form{
+    padding: 0 25em;
+    margin: 50px;
+    
+}
+.form input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 2.5px solid;
+    background: transparent;
+    outline: none;
+}
+.card{
+    margin: 18px;
+    background-color: transparent;
+}
+.card-img-top{
+    /* align-items: center; */
+    align-self: center;
+    /* justify-content: center; */
+    width: 48%;
+    height: 280px;
+}
+.card-text{
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+.cards-section{
+    padding-top: 25px;
+    background-color:#423c9e ;
+}
+@media screen and (max-width:770px){
+    .container-fluid{
+        padding: 0em !important;
+        margin: 0em !important;
+    }
+    .nav-item{
+        padding: 0em !important;
+        margin: auto !important;
+    }
+    .navbar-brand{
+        margin-left: 15px;
+    }
+    .navbar-toggler{
+        margin-right: 10px !important;
+    }
+    .intro h1{
+        font-size: 2em;
+    }
+    .button{
+        padding: 15px 45px;
+    }
+    .container p{
+        font-size: 15px;
+    }
+    .form{
+        padding: 0em;
+        margin: 12% 12% 12% 12%;
+    }
+    .form input{
+        width: 95%;
+        border: none;
+        text-align: center;
+        font-size: 1.5em;
+        border-bottom: 2.5px solid;
+        background: transparent;
+        outline: none;
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    } 
+}
+
