@@ -25,7 +25,7 @@ followed by the about section and the steps page where all the necessary steps r
 
 Then inside the predict section, there is a single textbox waiting for the user to enter his handle name after which the expected or predicted result along with some other details gets displayed.
 
-![3](https://user-images.githubusercontent.com/54525715/184470884-85969df4-2a00-4379-aa44-50ece8f3e76d.png)
+![image](https://user-images.githubusercontent.com/62991289/184496210-ac44426d-220d-4859-9b57-af1f279d6d83.png)
 
 ## Future Scope
 * The users will not only get the rating but will also be provided with the sample questions which he needs to practice.
