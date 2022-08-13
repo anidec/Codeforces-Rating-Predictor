@@ -17,15 +17,14 @@ With the objective of providing the future rating of the user so that he can pra
 ## Workflow
 The home page of the application provides a button to redirect the user to the prediction page,
 
-![1](https://user-images.githubusercontent.com/54525715/184470781-ef558fe2-5846-4232-b752-4be3fefac106.png)
+![image](https://user-images.githubusercontent.com/62991289/184496677-becbfb3e-d85a-46ed-b560-91117742d7e7.png)
 
 followed by the about section and the steps page where all the necessary steps regarding futher process are explained. 
-
-![2](https://user-images.githubusercontent.com/54525715/184470855-d3a2ccdb-0a95-4e15-9a25-de0818e63dd5.png)
+![image](https://user-images.githubusercontent.com/62991289/184496694-0912ed1b-6218-4c7a-873b-797409bfc0ed.png)
 
 Then inside the predict section, there is a single textbox waiting for the user to enter his handle name after which the expected or predicted result along with some other details gets displayed.
 
-![image](https://user-images.githubusercontent.com/62991289/184496210-ac44426d-220d-4859-9b57-af1f279d6d83.png)
+![image](https://user-images.githubusercontent.com/62991289/184496717-5b972b26-f591-49ee-af3d-1bfcd578b01f.png)
 
 ## Future Scope
 * The users will not only get the rating but will also be provided with the sample questions which he needs to practice.
